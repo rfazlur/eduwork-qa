@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Belajar JS Object</title>
+</head>
+<body>
+    <p id="object"></p>
+    <!-- <script>
+        const mobil = {
+            type: "honda",
+            model: "city",
+            color: "red",
+            harga: 10,
+            firstName: "John",
+            lastName: "Doe",
+            owner: function() {
+                return this.firstName +" "+ this.lastName
+            }
+        }
+        // honda city
+        document.getElementById("object").innerHTML = mobil.owner()
+    </script> -->
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            fullName: function() {
+                return this.firstName+" "+this.lastName
+            }
+        }
+        alert(person.fullName())
+    </script>
+</body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>JS Object</title>
+</head>
+<body>
+    <p id="object"></p>
+
+    <script>
+        // Create an object
+        const car = {
+            type: "honda",
+            model: "vios",
+            color: "black", 
+            firstName: "John",
+            lastName: "Doe",
+            owner: function() {
+                return this.firstName + " " + this.lastName
+            }
+        };
+
+        document.getElementById("object").innerHTML = 
+        "Type of car " + car["type"] +
+        "<br /> Model of car " + car.model +
+        "<br /> Color of car " + car.color +
+        "<br /> Owner of this car " + car.owner()
+    </script>
+</body>
